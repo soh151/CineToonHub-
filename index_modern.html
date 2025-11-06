@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Cinetoonhub — Movie &amp; Series Blog</title>
+<style>
+:root{
+  --bg:#0f1724; --card:#0b1220; --muted:#9aa6b2; --accent:#ff6b6b;
+  --glass: rgba(255,255,255,0.03);
+  --maxw:1100px;
+  --radius:14px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#071021 0%,var(--bg) 100%);color:#e6eef6;line-height:1.45}
+.container{max-width:var(--maxw);margin:36px auto;padding:20px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#ffb86b);display:flex;align-items:center;justify-content:center;font-weight:700;color:#071021}
+.site-title{font-size:20px;font-weight:700}
+.search{flex:1;margin-left:18px;max-width:520px}
+.search input{width:100%;padding:10px 14px;border-radius:12px;border:0;background:var(--glass);color:inherit}
+.nav-links{display:flex;gap:14px;align-items:center}
+.button{padding:8px 14px;border-radius:10px;background:var(--accent);color:#071021;font-weight:700;border:0;cursor:pointer}
+.hero{background:linear-gradient(90deg, rgba(255,255,255,0.02), transparent);padding:28px;border-radius:18px;margin-top:20px;display:grid;grid-template-columns:1fr 320px;gap:20px}
+.hero-left h1{margin:0;font-size:32px}
+.meta{color:var(--muted);margin-top:10px}
+.featured{display:flex;flex-direction:column;gap:12px;margin-top:18px}
+.featured .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:14px;border-radius:12px;display:flex;gap:12px;align-items:center}
+.thumb{width:110px;height:66px;border-radius:8px;background:#26323d;flex:0 0 110px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-weight:700}
+.posts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:22px}
+.post{background:var(--card);padding:14px;border-radius:12px}
+.post h3{margin:8px 0 6px 0;font-size:16px}
+.post p{margin:0;color:var(--muted);font-size:14px}
+.tags{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+.tag{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+.sidebar .widget{background:var(--card);padding:12px;border-radius:12px;margin-bottom:12px}
+.grid-two{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:18px}
+.footer{margin-top:28px;color:var(--muted);font-size:14px;padding:18px;border-radius:12px;background:transparent;text-align:center}
+@media (max-width:880px){
+  .hero{grid-template-columns:1fr}
+  .grid-two{grid-template-columns:1fr}
+  .search{max-width:none;margin-left:0}
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header class="nav">
+      <div class="brand">
+        <div class="logo">CT</div>
+        <div>
+          <div class="site-title">Cinetoonhub</div>
+          <div style="font-size:12px;color:var(--muted)">Movies • Series • Reviews</div>
+        </div>
+      </div>
+      <div class="search"><input placeholder="Search reviews, titles, actors..." /></div>
+      <nav class="nav-links">
+        <a style="color:var(--muted);text-decoration:none">Reviews</a>
+        <a style="color:var(--muted);text-decoration:none">News</a>
+        <a style="color:var(--muted);text-decoration:none">Lists</a>
+        <button class="button">Subscribe</button>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Top picks this week: Must-watch movies & series</h1>
+        <div class="meta">Updated • Nov 6, 2025 — Curated reviews, trailers, and cast breakdowns.</div>
+        <div class="featured">
+          <div class="card">
+            <div class="thumb">Poster</div>
+            <div>
+              <strong>Midnight Reel — A psychological thriller</strong>
+              <div style="color:var(--muted);font-size:13px">5 min read • Review</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="thumb">Poster</div>
+            <div>
+              <strong>Orbit City: Season 2</strong>
+              <div style="color:var(--muted);font-size:13px">8 min read • Episode Guide</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <div class="widget">
+          <strong>Newsletter</strong>
+          <p style="color:var(--muted);margin:8px 0 0 0">Get weekly picks in your inbox.</p>
+          <div style="margin-top:10px"><input style="width:100%;padding:8px;border-radius:8px;border:0;background:var(--glass);color:inherit" placeholder="Email address"/></div>
+        </div>
+
+        <div class="widget">
+          <strong>Trending Tags</strong>
+          <div class="tags" style="margin-top:8px">
+            <div class="tag">#thriller</div>
+            <div class="tag">#sci-fi</div>
+            <div class="tag">#oscar</div>
+            <div class="tag">#streaming</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="grid-two">
+      <main>
+        <h2 style="margin:0 0 8px 0">Latest posts</h2>
+        <div class="posts">
+          <article class="post">
+            <div style="height:140px;border-radius:10px;background:#16222b;display:flex;align-items:center;justify-content:center;color:var(--muted)">Hero Image</div>
+            <h3>Review: Midnight Reel — A wild, slow-burn thriller</h3>
+            <p>We dissect the directing choices, the ending explained, and whether it deserves your time.</p>
+            <div style="margin-top:10px;color:var(--muted);font-size:13px">6 min read • Nov 5, 2025</div>
+          </article>
+
+          <article class="post">
+            <div style="height:140px;border-radius:10px;background:#16222b;display:flex;align-items:center;justify-content:center;color:var(--muted)">Hero Image</div>
+            <h3>Guide: Best family-friendly animated films 2025</h3>
+            <p>Family picks across streaming platforms, age suitability, and short blurbs.</p>
+            <div style="margin-top:10px;color:var(--muted);font-size:13px">4 min read • Nov 3, 2025</div>
+          </article>
+
+          <article class="post">
+            <div style="height:140px;border-radius:10px;background:#16222b;display:flex;align-items:center;justify-content:center;color:var(--muted)">Hero Image</div>
+            <h3>Interview: Composer behind Orbit City</h3>
+            <p>Behind-the-scenes look at scoring sci-fi series of the year.</p>
+            <div style="margin-top:10px;color:var(--muted);font-size:13px">7 min read • Oct 29, 2025</div>
+          </article>
+        </div>
+      </main>
+
+      <aside style="width:320px">
+        <div class="widget">
+          <strong>Popular</strong>
+          <ol style="margin:8px 0 0 16px;color:var(--muted)">
+            <li>How to stream on a budget</li>
+            <li>Top 10 performances 2025</li>
+            <li>Hidden indie gems</li>
+          </ol>
+        </div>
+
+        <div class="widget">
+          <strong>About Cinetoonhub</strong>
+          <p style="color:var(--muted);margin:8px 0 0 0">A cinephile's corner for thoughtful reviews, curated lists, and industry updates.</p>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="footer">© 2025 Cinetoonhub — Built with ❤️ · <span style="color:var(--muted)">Made for demo / repo</span></footer>
+  </div>
+</body>
+</html>

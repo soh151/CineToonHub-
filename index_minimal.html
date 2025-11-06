@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Cinetoonhub — Minimal</title>
+<style>
+body{font-family: Arial, Helvetica, sans-serif;margin:0;color:#222;background:#f7f7f7}
+.header{background:#111;color:white;padding:18px}
+.container{max-width:900px;margin:20px auto;padding:0 16px}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:700}
+.search input{padding:8px;border-radius:6px;border:1px solid #ddd}
+.list{display:grid;grid-template-columns:1fr;gap:12px;margin-top:16px}
+.item{background:white;padding:12px;border-radius:8px;border:1px solid #eee}
+.item h3{margin:0 0 6px 0}
+.meta{color:#666;font-size:13px}
+.footer{margin-top:20px;padding:12px;text-align:center;color:#888;font-size:13px}
+@media(min-width:720px){
+  .list{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">Cinetoonhub</div>
+      <div class="search"><input placeholder="Search..." /></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h1 style="margin:12px 0 6px 0">Latest</h1>
+      <div class="list">
+        <article class="item">
+          <h3>Midnight Reel — Review</h3>
+          <div class="meta">Nov 5, 2025 • 6 min read</div>
+          <p style="margin-top:8px;color:#444">A concise review of a tense psychological thriller.</p>
+        </article>
+
+        <article class="item">
+          <h3>Best Family Animations 2025</h3>
+          <div class="meta">Nov 3, 2025 • 4 min read</div>
+          <p style="margin-top:8px;color:#444">Curated family picks with streaming options.</p>
+        </article>
+
+        <article class="item">
+          <h3>Orbit City — Composer Interview</h3>
+          <div class="meta">Oct 29, 2025 • 7 min read</div>
+          <p style="margin-top:8px;color:#444">Behind-the-scenes with the show's composer.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© 2025 Cinetoonhub — Demo template for repo</footer>
+</body>
+</html>
